@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white h-screen flex items-center justify-center p-4">
+
+  <div class="w-full max-w-md bg-gray-800 p-6 rounded-xl shadow-lg">
+    <h1 class="text-2xl font-bold text-center mb-4">📝 Todo App</h1>
+
+    <!-- Input -->
+    <div class="flex gap-2 mb-4">
+      <input id="taskInput" type="text" placeholder="Add a task"
+             class="w-full bg-gray-700 px-4 py-2 rounded-lg outline-none border border-gray-600" />
+      <button id="addBtn"
+              class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg">
+        Add
+      </button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList" class="space-y-2"></ul>
+  </div>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
